@@ -10,10 +10,15 @@ public class Bag : MonoBehaviour {
     public void OpenCloseBag() {
         if (isClosed == true)
         {
+            //Pause
+            Time.timeScale = 0.0f;
+
             bag.SetActive(true);
             isClosed = false;
         }
         else {
+            //Start game
+            Time.timeScale = 1;
             bag.SetActive(false);
             isClosed = true;
         }
