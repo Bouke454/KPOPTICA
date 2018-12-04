@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Bag : MonoBehaviour {
 
-    bool isClosed;
+    //If not activated the player will need to press twice to open the bag
+    bool isClosed = true;
     public GameObject bag;
 
+
+    //Method will only be called after interaction with the player mouse click
     public void OpenCloseBag() {
         if (isClosed == true)
         {
