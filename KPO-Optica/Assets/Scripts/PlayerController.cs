@@ -1,38 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public float speed;
-    private Rigidbody2D rb;
-    private Animator anim;
-    private Vector2 moveVelocity;
+    public float speed = 10f;
+    private Vector3 target;
 
-    private void Start()
-    {
-        anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+    void Start() {
+        target = transform.position;
     }
 
-    private void Update()
-    {
-
-        Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        moveVelocity = moveInput.normalized * speed;
-
-        if (moveInput != Vector2.zero)
-        {
-            anim.SetBool("isRunning", true);
+    void Update() {
+        //Bekijk of de speler de muis heeft ingedrukt en of er geen gameobject in de weg staat tijdens het klikken
+        if (Input.GetMouseButton(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) {
+            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            target.z = transform.position.z;
         }
-        else {
-            anim.SetBool("isRunning", false);
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
     }
 }
