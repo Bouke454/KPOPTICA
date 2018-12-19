@@ -12,7 +12,6 @@ public class Pickup : MonoBehaviour {
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
     }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")) {

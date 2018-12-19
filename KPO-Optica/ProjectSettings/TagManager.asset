@@ -45,3 +45,12 @@ TagManager:
   - name: Player
     uniqueID: 1259699857
     locked: 0
+  - name: Area
+    uniqueID: 975016629
+    locked: 0
+  - name: Light
+    uniqueID: 2278458133
+    locked: 0
+  - name: Table
+    uniqueID: 525797065
+    locked: 0
