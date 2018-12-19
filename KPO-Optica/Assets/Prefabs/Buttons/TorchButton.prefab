@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114406063486442230}
   - component: {fileID: 114526700215934560}
   - component: {fileID: 114966126810441678}
+  - component: {fileID: 114364784439063266}
   m_Layer: 5
   m_Name: TorchButton
   m_TagString: Untagged
@@ -31,6 +32,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114364784439063266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050184551804244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537898b8bdd7010478197d4ebbad549c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114406063486442230
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equip: {fileID: 1945309205120104, guid: db3408fbc539fae4098d638b3243a113, type: 2}
-  ShadowPlayer: {fileID: 1202034170505794, guid: 543623d6fc9270e49b77c48c53e9647b,
+  LightOrShadow: {fileID: 1202034170505794, guid: 543623d6fc9270e49b77c48c53e9647b,
     type: 2}
 --- !u!222 &222143146261044616
 CanvasRenderer:

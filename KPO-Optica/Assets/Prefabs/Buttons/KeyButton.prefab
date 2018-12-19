@@ -24,13 +24,25 @@ GameObject:
   - component: {fileID: 114406063486442230}
   - component: {fileID: 114526700215934560}
   - component: {fileID: 114966126810441678}
+  - component: {fileID: 114364784439063266}
   m_Layer: 5
-  m_Name: FlashlightButton
+  m_Name: KeyButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114364784439063266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050184551804244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537898b8bdd7010478197d4ebbad549c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114406063486442230
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,7 +114,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3926df098e23c494c996a4aeadabd971, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea617bccfcc8fa6428dd09a35b83590c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -121,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7e0952744d973247824b8a41b1ae32b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 1963415067203634, guid: 321ac8c1ff53c7845a266f90415e8ef2, type: 2}
+  item: {fileID: 1963415067203634, guid: 55a56e4699701ed438b8b78cb1ffc5d7, type: 2}
 --- !u!114 &114966126810441678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,8 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebed2f5e0dc673444ae751d92eee51d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  equip: {fileID: 1945309205120104, guid: d5225cf9f51839041a91ddbf91a86e25, type: 2}
-  LightOrShadow: {fileID: 1008901211537062, guid: 0d2b2055b82d6994484f8be9cd98d6df,
+  equip: {fileID: 1945309205120104, guid: efff852a7edff9349ad86206f304f917, type: 2}
+  LightOrShadow: {fileID: 1506316192113788, guid: 217ebdbb5e985e44ab2a2038deda0663,
     type: 2}
 --- !u!222 &222143146261044616
 CanvasRenderer:

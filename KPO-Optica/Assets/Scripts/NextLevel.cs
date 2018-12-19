@@ -4,8 +4,28 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour {
+    public GameStatus status;
+    public WeaponItem item;
 
+
+    // Use this for initialization
+    void Start() {
+        Scene scene = SceneManager.GetActiveScene();
+        Debug.Log("Active Scene name is: " + scene.name + "\nActive Scene index: " + scene.buildIndex);
+    }
     private void OnTriggerEnter2D(Collider2D other) {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (other.CompareTag("Key")) {
+            status.AccesLevel = true;
+            Scene scene = SceneManager.GetActiveScene();
+            if (status.AccesLevel == true) {
+                Debug.Log("You may enter");
+                //Destroy(GameObject.FindWithTag("Key"));
+                Destroy(GameObject.Find("KeyWep(Clone)"));
+                status.AccesLevel = false;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        } else {
+            Debug.Log("You are not authorized");
+        }
     }
 }
