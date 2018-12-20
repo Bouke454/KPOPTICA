@@ -35,13 +35,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1945309205120104}
-  m_LocalRotation: {x: -0, y: -0, z: -0.41789472, w: 0.9084955}
-  m_LocalPosition: {x: -8.63, y: -1.61, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.007339201, w: 0.99997306}
+  m_LocalPosition: {x: -12.28, y: -3.33, z: 0}
   m_LocalScale: {x: 1.4371696, y: 1.4371682, z: 1.4371682}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -49.403004}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.841}
 --- !u!58 &58332897157489054
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -70,8 +70,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 1050184551804244, guid: e9bd73cb490bd6248bd684412e533f8c, type: 2}
   effect: {fileID: 1320962406381760, guid: 06168afec4da0964ea6fd6f69f7c8b90, type: 2}
-  PickupSound: {fileID: 82960771390597766, guid: 0221d3614f43da741a44eaafc1c3288a,
-    type: 2}
 --- !u!212 &212857356651834576
 SpriteRenderer:
   m_ObjectHideFlags: 1

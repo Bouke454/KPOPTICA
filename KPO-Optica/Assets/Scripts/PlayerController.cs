@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour {
 
     public float speed = 10f;
     private Vector3 target;
-
+    private Vector3 offset;
     void Start() {
         target = transform.position;
     }

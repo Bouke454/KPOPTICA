@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerPos
   - Key
+  - Flashlight
   layers:
   - Default
   - TransparentFX
