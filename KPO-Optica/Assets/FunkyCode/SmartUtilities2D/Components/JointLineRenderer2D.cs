@@ -26,13 +26,13 @@ public class JointLineRenderer2D : MonoBehaviour {
 				continue;
 			}
 			if (joint.anchoredJoint2D == null) {
-				continue;
+                continue;
 			}
 			if (joint.anchoredJoint2D.isActiveAndEnabled == false) {
-				continue;
+                continue;
 			}
 			if (joint.anchoredJoint2D.connectedBody == null) {
-				continue;
+                continue;
 			}
 
 			switch (joint.jointType) {

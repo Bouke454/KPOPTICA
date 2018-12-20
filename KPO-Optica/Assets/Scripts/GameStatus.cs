@@ -9,9 +9,9 @@ public class GameStatus : MonoBehaviour {
     public bool AccesLevel { get; set; }
 
     //Vastleggen welke levels behaald zijn (overworld & storybook)
-    public bool Castle1 { get; set; }
-    public bool Castle2 { get; set; }
-    public bool Castle3 { get; set; }
-    public bool Castle4 { get; set; }
-    public bool Castle5 { get; set; }
+    public static bool Castle1; 
+    public static bool Castle2;
+    public static bool Castle3;
+    public static bool Castle4;
+    public static bool Castle5;
     }
