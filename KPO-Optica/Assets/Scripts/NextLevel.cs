@@ -19,8 +19,7 @@ public class NextLevel : MonoBehaviour {
             Scene scene = SceneManager.GetActiveScene();
             if (status.AccesLevel == true) {
                 Debug.Log("You may enter");
-                //Destroy(GameObject.FindWithTag("Key"));
-                Destroy(GameObject.Find("KeyWep(Clone)"));
+                Destroy(GameObject.FindWithTag("Key"));
                 status.AccesLevel = false;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
