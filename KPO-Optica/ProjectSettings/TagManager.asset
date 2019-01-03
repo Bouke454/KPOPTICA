@@ -9,6 +9,7 @@ TagManager:
   - Flashlight
   - Solid
   - Bag
+  - Random
   layers:
   - Default
   - TransparentFX

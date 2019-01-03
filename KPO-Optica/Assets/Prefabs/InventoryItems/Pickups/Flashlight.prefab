@@ -119,8 +119,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 1050184551804244, guid: e9bd73cb490bd6248bd684412e533f8c, type: 2}
   effect: {fileID: 1320962406381760, guid: 06168afec4da0964ea6fd6f69f7c8b90, type: 2}
-  PickupSound: {fileID: 82307352641487206, guid: 0221d3614f43da741a44eaafc1c3288a,
-    type: 2}
 --- !u!212 &212572609169019520
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -156,7 +154,7 @@ SpriteRenderer:
   m_SortingLayerID: 525797065
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3926df098e23c494c996a4aeadabd971, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1ed618dda66b69046a809de227567ba2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
