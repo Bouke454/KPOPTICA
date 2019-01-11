@@ -9,7 +9,7 @@ TagManager:
   - Flashlight
   - Solid
   - Bag
-  - Random
+  - UIOption
   layers:
   - Default
   - TransparentFX

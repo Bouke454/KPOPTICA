@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114526700215934560}
   - component: {fileID: 114966126810441678}
   m_Layer: 5
-  m_Name: FlashlightButton
+  m_Name: FlashlightuvButton
   m_TagString: Flashlight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1ed618dda66b69046a809de227567ba2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a94513b67799207478fe6237867d76bf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7e0952744d973247824b8a41b1ae32b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 1963415067203634, guid: 321ac8c1ff53c7845a266f90415e8ef2, type: 2}
+  item: {fileID: 1963415067203634, guid: 061ecbe62e9a2584089a052cdc6e343d, type: 2}
 --- !u!114 &114966126810441678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,8 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebed2f5e0dc673444ae751d92eee51d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  equip: {fileID: 1945309205120104, guid: d5225cf9f51839041a91ddbf91a86e25, type: 2}
-  LightOrShadow: {fileID: 1008901211537062, guid: 0d2b2055b82d6994484f8be9cd98d6df,
+  equip: {fileID: 1945309205120104, guid: 183933d4588d3d648a47430d94e23355, type: 2}
+  LightOrShadow: {fileID: 1008901211537062, guid: 8e14ed944374693468098511ceefd5e8,
     type: 2}
 --- !u!222 &222143146261044616
 CanvasRenderer:

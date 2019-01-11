@@ -65,8 +65,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963415067203634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.62, y: -4.75, z: 0}
-  m_LocalScale: {x: 0.92736, y: 0.77279997, z: 0.77279997}
+  m_LocalPosition: {x: -25.97, y: 10.52, z: 0}
+  m_LocalScale: {x: 0.32272127, y: 0.26893437, z: 0.77279997}
   m_Children:
   - {fileID: 4069397644771964}
   m_Father: {fileID: 0}
@@ -86,7 +86,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.2
+  m_Radius: 2
 --- !u!114 &114381458048197508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -100,8 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 1050184551804244, guid: d83c5ee66fa7810408504af41d179988, type: 2}
   effect: {fileID: 1320962406381760, guid: 06168afec4da0964ea6fd6f69f7c8b90, type: 2}
-  PickupSound: {fileID: 82307352641487206, guid: 0221d3614f43da741a44eaafc1c3288a,
-    type: 2}
 --- !u!212 &212572609169019520
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -134,8 +132,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1259699857
-  m_SortingLayer: 1
+  m_SortingLayerID: 975016629
+  m_SortingLayer: 2
   m_SortingOrder: -50
   m_Sprite: {fileID: 21300000, guid: ea617bccfcc8fa6428dd09a35b83590c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

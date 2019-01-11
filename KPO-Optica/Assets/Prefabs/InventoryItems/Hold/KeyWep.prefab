@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212857356651834576}
   - component: {fileID: 58332897157489054}
   - component: {fileID: 114540700386542532}
-  - component: {fileID: 114930256993633034}
   m_Layer: 0
   m_Name: KeyWep
   m_TagString: Key
@@ -36,13 +35,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1945309205120104}
-  m_LocalRotation: {x: -0, y: -0, z: -0.41789472, w: 0.9084955}
-  m_LocalPosition: {x: -8.63, y: -1.61, z: 0}
-  m_LocalScale: {x: 1.4371696, y: 1.4371682, z: 1.4371682}
+  m_LocalRotation: {x: 0.07619627, y: -0.05912844, z: -0.00015533342, w: 0.99533814}
+  m_LocalPosition: {x: -7.08, y: -20.067, z: -0.34}
+  m_LocalScale: {x: 1.9398756, y: 1.8211843, z: 1.4371682}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -49.403004}
+  m_LocalEulerAnglesHint: {x: 8.723001, y: -6.8410006, z: -0.54}
 --- !u!58 &58332897157489054
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -71,19 +70,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 1050184551804244, guid: d83c5ee66fa7810408504af41d179988, type: 2}
   effect: {fileID: 1320962406381760, guid: 06168afec4da0964ea6fd6f69f7c8b90, type: 2}
-  PickupSound: {fileID: 82960771390597766, guid: 0221d3614f43da741a44eaafc1c3288a,
-    type: 2}
---- !u!114 &114930256993633034
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1945309205120104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 537898b8bdd7010478197d4ebbad549c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212857356651834576
 SpriteRenderer:
   m_ObjectHideFlags: 1
