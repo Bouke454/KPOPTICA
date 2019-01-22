@@ -3,8 +3,8 @@ using System.Collections;
 
 public class PlayerRotation : MonoBehaviour {
     public GameObject player;
-    private float degreesPerSec = 140f;
-    private static bool rotate;
+    private float degreesPerSec = 120f;
+    public  bool rotate;
     // Update is called once per frame
     public void Update() {
         if (rotate) {

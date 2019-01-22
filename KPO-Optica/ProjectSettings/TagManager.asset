@@ -10,6 +10,8 @@ TagManager:
   - Solid
   - Bag
   - UIOption
+  - Event
+  - Torch
   layers:
   - Default
   - TransparentFX
