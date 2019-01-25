@@ -6,8 +6,7 @@ public class PrismaDetectLight : MonoBehaviour {
 	public Event QuizCheck;
     private LightingCollider2D controlLighting;
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Flashlight")) {
-            
+        if (other.CompareTag("Flashlight")) {         
             //controlLighting = gameObject.GetComponent<LightingCollider2D>();
             //controlLighting.enabled = true;
             Prisma.SetActive(true);

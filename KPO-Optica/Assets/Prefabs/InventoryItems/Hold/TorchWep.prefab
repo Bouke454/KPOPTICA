@@ -11,6 +11,22 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1945309205120104}
   m_IsPrefabAsset: 1
+--- !u!1 &1391701656281738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4454960926990982}
+  - component: {fileID: 114769215962418022}
+  m_Layer: 0
+  m_Name: Light_Torch
+  m_TagString: Torch
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1945309205120104
 GameObject:
   m_ObjectHideFlags: 0
@@ -35,13 +51,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1945309205120104}
-  m_LocalRotation: {x: 0.034196276, y: 0.015838033, z: 0.064021505, w: 0.99723667}
-  m_LocalPosition: {x: -11.1, y: -19.885, z: -0.18}
-  m_LocalScale: {x: 0.93504256, y: 0.79852116, z: 1.4371682}
-  m_Children: []
+  m_LocalRotation: {x: 0.03419628, y: 0.015838034, z: 0.06402151, w: 0.9972367}
+  m_LocalPosition: {x: -4.64, y: -25.07, z: -1.27}
+  m_LocalScale: {x: 0.7975003, y: 0.60844, z: 1.4371682}
+  m_Children:
+  - {fileID: 4454960926990982}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 3.7940001, y: 2.066, z: 7.4150004}
+--- !u!4 &4454960926990982
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391701656281738}
+  m_LocalRotation: {x: -0.03419628, y: -0.015838034, z: -0.06402151, w: 0.9972367}
+  m_LocalPosition: {x: -0.011140258, y: -1.727538, z: -5.4329405}
+  m_LocalScale: {x: 1.7254143, y: 1.8788799, z: 0.7024485}
+  m_Children: []
+  m_Father: {fileID: 4447965026644504}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &58332897157489054
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -70,6 +100,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 1050184551804244, guid: 76124b5630b48c04db13b4d1ec023b49, type: 2}
   effect: {fileID: 1320962406381760, guid: 06168afec4da0964ea6fd6f69f7c8b90, type: 2}
+--- !u!114 &114769215962418022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391701656281738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2eae93e34ecaed4ca8e54e8d2a1b73b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightColor: {r: 0.7529412, g: 0.70122755, b: 0.1960784, a: 1}
+  lightAlpha: 1
+  lightSize: 8
+  textureSize: 1
+  rotationEnabled: 1
+  lightSprite: 0
+  sprite: {fileID: 21300000, guid: 6592d6be03fd808449716a11558d506f, type: 3}
+  update: 0
 --- !u!212 &212857356651834576
 SpriteRenderer:
   m_ObjectHideFlags: 1

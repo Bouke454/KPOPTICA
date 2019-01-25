@@ -128,8 +128,6 @@ public class GameController : MonoBehaviour
 	{
         RoundFailDisplay.SetActive(false);
         questionDisplay.SetActive(false);
-        DestroyAll("Flashlight");
-        DestroyAll("Torch");
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
@@ -137,13 +135,6 @@ public class GameController : MonoBehaviour
     private void UpdateTimeRemainingDisplay()
     {
         timeRemainingDisplayText.text = "Tijd: " + Mathf.Round(timeRemaining).ToString();
-    }
-
-    void DestroyAll(string tag) {
-        GameObject[] item = GameObject.FindGameObjectsWithTag(tag);
-        for (int i = 0; i < item.Length; i++) {
-            Destroy(item[i]);
-        }
     }
 
     // Update is called once per frame

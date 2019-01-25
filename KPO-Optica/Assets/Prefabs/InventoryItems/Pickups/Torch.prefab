@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114828687641633952}
   - component: {fileID: 114943761127348182}
   m_Layer: 0
-  m_Name: shadow
+  m_Name: light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 212572609169019520}
   - component: {fileID: 58966191756159102}
   - component: {fileID: 114381458048197508}
+  - component: {fileID: 114434244369174252}
   m_Layer: 0
   m_Name: Torch
   m_TagString: Torch
@@ -66,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963415067203634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.968, y: -9.99, z: 0}
+  m_LocalPosition: {x: -11.72, y: -9.99, z: 0}
   m_LocalScale: {x: 0.546215, y: 0.5394144, z: 0.77279997}
   m_Children:
   - {fileID: 4311119825463726}
@@ -85,9 +86,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.55, y: -1.42}
   serializedVersion: 2
-  m_Radius: 1.2
+  m_Radius: 3.45
 --- !u!114 &114381458048197508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -101,6 +102,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 1050184551804244, guid: 76124b5630b48c04db13b4d1ec023b49, type: 2}
   effect: {fileID: 1320962406381760, guid: 06168afec4da0964ea6fd6f69f7c8b90, type: 2}
+--- !u!114 &114434244369174252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1963415067203634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fcf70d767727d64f9c238577014fda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - Je hebt zojuist een fakkel verzameld!
+    - Klik op het tasje links onderin dit is je inventaris
+    - Selecteer de fakkel uit je inventaris om zo licht te schijnen
+    - En zoek de verborgen sleutel om binnen te komen
 --- !u!114 &114828687641633952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightColor: {r: 0.7529412, g: 0.70122755, b: 0.1960784, a: 1}
   lightAlpha: 1
-  lightSize: 10
+  lightSize: 8
   textureSize: 1
   rotationEnabled: 0
   lightSprite: 0

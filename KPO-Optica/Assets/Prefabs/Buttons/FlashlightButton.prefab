@@ -134,8 +134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equip: {fileID: 1945309205120104, guid: d5225cf9f51839041a91ddbf91a86e25, type: 2}
-  LightOrShadow: {fileID: 1008901211537062, guid: 0d2b2055b82d6994484f8be9cd98d6df,
-    type: 2}
 --- !u!222 &222143146261044616
 CanvasRenderer:
   m_ObjectHideFlags: 1

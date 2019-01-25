@@ -25,24 +25,12 @@ public class OverworldSelection : MonoBehaviour {
                     }
                 }
             }
-            //Remove items from player itself 
-            //When initiating new scene
-            Destroy(GameObject.FindWithTag("Key"));
-            DestroyAll("Flashlight");
-            DestroyAll("Torch");
-            //Destroy(GameObject.FindWithTag("Torch"));
             status.TravelPermission = false;
             SceneManager.LoadScene("Castle" + GetButtonNumber);
         } else {
             Debug.Log("You have not unlocked this level yet");
         }
         
-    }
-    void DestroyAll(string tag) {
-        GameObject[] item = GameObject.FindGameObjectsWithTag(tag);
-        for (int i = 0; i < item.Length; i++) {
-            Destroy(item[i]);
-        }
     }
 }
 

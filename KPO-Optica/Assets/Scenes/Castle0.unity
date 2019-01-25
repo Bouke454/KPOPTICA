@@ -113,32 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!21 &2636845
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Particles/Additive
-  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _InvFade: 1
-    m_Colors:
-    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1 &23371269
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,37 +281,31 @@ RenderTexture:
     m_WrapW: 1
   m_Dimension: 2
   m_VolumeDepth: 1
---- !u!84 &98540449
-RenderTexture:
+--- !u!21 &100257271
+Material:
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 744
-  m_Height: 422
-  m_AntiAliasing: 1
-  m_DepthFormat: 1
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
+  m_Name: Particles/Multiply
+  m_Shader: {fileID: 205, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 572659518}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    m_Colors: []
 --- !u!1 &107351731
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +388,7 @@ Transform:
   - {fileID: 1480334334}
   - {fileID: 465396743}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &122935978
 GameObject:
@@ -1008,7 +976,7 @@ Transform:
   m_LocalScale: {x: 1.1796576, y: 1.160052, z: 1.4596301}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &274639293
 Material:
@@ -1122,6 +1090,31 @@ MonoBehaviour:
   textureSize: 128
   material: {fileID: 1683275762}
   bufferCamera: {fileID: 293646664}
+--- !u!21 &354652294
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Particles/Multiply
+  m_Shader: {fileID: 205, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 6745d40e3d8e2024db77634045d4331e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    m_Colors: []
 --- !u!1 &362153415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,8 +1366,8 @@ MonoBehaviour:
   dialogue:
     sentences:
     - De zaklamp kan gebruikt worden om bepaalde opdrachten mee uit te voeren
-    - In deze kamer is het van belang om de zaklamp op de prisma te schijnen (het
-      driehoekige object in het kleine kamertje)
+    - In deze kamer is het van belang om de zaklamp op de prisma te schijnen
+    - De prisma is het driehoekige object (optisch)
 --- !u!4 &404540028
 Transform:
   m_ObjectHideFlags: 0
@@ -1386,7 +1379,7 @@ Transform:
   m_LocalScale: {x: 1.2001019, y: 1.2011275, z: 1.4596301}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &419356651
 GameObject:
@@ -1540,31 +1533,6 @@ Transform:
   m_Father: {fileID: 109294241}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0.001, y: 0, z: 0}
---- !u!21 &471130069
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Particles/Multiply
-  m_Shader: {fileID: 205, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: eaae16fedda51e14296dcf680fe86c1d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _InvFade: 1
-    m_Colors: []
 --- !u!21 &511498735
 Material:
   serializedVersion: 6
@@ -2197,6 +2165,37 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 571197992}
   m_CullTransparentMesh: 0
+--- !u!84 &572659518
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1053
+  m_Height: 422
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &574836877
 GameObject:
   m_ObjectHideFlags: 0
@@ -4121,7 +4120,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4632188501022576, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.4089713
+      value: 6.062
       objectReference: {fileID: 0}
     - target: {fileID: 4632188501022576, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4169,7 +4168,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4632188501022576, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.7643737
+      value: 2.1772318
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
@@ -4285,15 +4284,15 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 621624175}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -7.96875}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.05859375}
+  m_LocalScale: {x: 0.67843527, y: 0.75778466, z: 1}
   m_Children: []
-  m_Father: {fileID: 1904972835}
-  m_RootOrder: 3
+  m_Father: {fileID: 1928285871}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 519.4201, y: 292.11798}
+  m_AnchoredPosition: {x: 345.36426, y: 227.50214}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!84 &653237907
@@ -4378,6 +4377,31 @@ MonoBehaviour:
   lightSprite: 1
   sprite: {fileID: 21300000, guid: d39788941ffdd2c47bcbe8a797c8cdaf, type: 3}
   update: 1
+--- !u!21 &676426749
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Particles/Multiply
+  m_Shader: {fileID: 205, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 878f3ca41fd951641b863a008fd82762, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    m_Colors: []
 --- !u!1 &678655037
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,9 +4584,9 @@ MonoBehaviour:
     - Selecteer de zaklamp om deze te gebruiken. De zaklamp zal automatisch aan gaan
     - Om de richting van de zaklamp te bepalen maak je gebruik van de rotatie knop
       (zie de meest rechter witte knop)
-    - Met een eenmalige klik op de rotatie knop zal de speler blijven draaien
-    - Wanneer vervolgens weer geklikt word op de rotatie knop zal de speler stoppen
-      met draaien
+    - Met een eenmalige klik op de rotatie knop
+    - zal de speler blijven draaien
+    - Een nieuwe klik zorgt ervoor dat de speler stopt
     - Maak hier handig gebruik van wanneer je moet schijnen op objecten
 --- !u!4 &697651125
 Transform:
@@ -4575,7 +4599,7 @@ Transform:
   m_LocalScale: {x: 1.1796576, y: 1.160052, z: 1.4596301}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &701609037
 GameObject:
@@ -4605,10 +4629,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46fc7ab08e009d648a9b9cddc73c22b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 1678600609}
+  material: {fileID: 100257271}
   bufferCamera: {fileID: 701609039}
   darknessColor: {r: 0, g: 0, b: 0, a: 1}
-  screenWidth: 744
+  screenWidth: 1053
   screenHeight: 422
 --- !u!20 &701609039
 Camera:
@@ -4640,7 +4664,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 98540449}
+  m_TargetTexture: {fileID: 572659518}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
@@ -4717,6 +4741,31 @@ RenderTexture:
     m_WrapW: 1
   m_Dimension: 2
   m_VolumeDepth: 1
+--- !u!21 &708886150
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Particles/Multiply
+  m_Shader: {fileID: 205, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 4f895cbbdf3ea774faffecb1957b91f9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    m_Colors: []
 --- !u!84 &725121871
 RenderTexture:
   m_ObjectHideFlags: 0
@@ -5183,7 +5232,7 @@ Camera:
   far clip plane: 0.5
   field of view: 60
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 12
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -5348,7 +5397,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5400,7 +5449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - Wit licht door een optische prisma toont een mooi kleuren spectrum
+    - Wit licht door een optische prisma toont een kleurenspectrum
 --- !u!4 &875227510
 Transform:
   m_ObjectHideFlags: 0
@@ -5414,7 +5463,7 @@ Transform:
   m_Children:
   - {fileID: 107351732}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &875227511
 MonoBehaviour:
@@ -5429,31 +5478,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prisma: {fileID: 107351731}
   QuizCheck: {fileID: 1076620405}
---- !u!21 &909461982
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Particles/Multiply
-  m_Shader: {fileID: 205, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 878f3ca41fd951641b863a008fd82762, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _InvFade: 1
-    m_Colors: []
 --- !u!1 &911698504
 GameObject:
   m_ObjectHideFlags: 0
@@ -5578,15 +5602,6 @@ Prefab:
     - target: {fileID: 4908344603111046, guid: 321ac8c1ff53c7845a266f90415e8ef2, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1963415067203634, guid: 321ac8c1ff53c7845a266f90415e8ef2, type: 2}
-      propertyPath: m_Name
-      value: Flashlight (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 58443820831288394, guid: 321ac8c1ff53c7845a266f90415e8ef2,
-        type: 2}
-      propertyPath: m_Radius
-      value: 6.54
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 321ac8c1ff53c7845a266f90415e8ef2, type: 2}
@@ -5780,12 +5795,12 @@ MonoBehaviour:
   sunDirection: -1.5707964
   shadowDarkness: 0.882
   mainBuffer: {fileID: 701609038}
-  penumbraMaterial: {fileID: 471130069}
-  occlusionEdgeMaterial: {fileID: 1570527519}
-  occlusionBlurMaterial: {fileID: 909461982}
-  shadowBlurMaterial: {fileID: 2024259463}
-  additiveMaterial: {fileID: 2636845}
-  whiteSpriteMaterial: {fileID: 1830866003}
+  penumbraMaterial: {fileID: 1086465568}
+  occlusionEdgeMaterial: {fileID: 708886150}
+  occlusionBlurMaterial: {fileID: 676426749}
+  shadowBlurMaterial: {fileID: 354652294}
+  additiveMaterial: {fileID: 1258569099}
+  whiteSpriteMaterial: {fileID: 1388972842}
   enable: 1
   debug: 0
 --- !u!4 &1031434220
@@ -5800,7 +5815,7 @@ Transform:
   m_Children:
   - {fileID: 701609040}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1052515298
 GameObject:
@@ -5826,7 +5841,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1052515298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfdbe581c0d2b704380c33ca8dccbd6e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0efd08b14949a3441aaa27517949f841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   questionDisplayText: {fileID: 571197994}
@@ -5846,15 +5861,15 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1052515298}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.05859375}
+  m_LocalScale: {x: 0.67843527, y: 0.75778466, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1928285871}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 512, y: 293.5}
+  m_AnchoredPosition: {x: 345.36426, y: 227.50214}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1076620404
@@ -5898,6 +5913,31 @@ Transform:
   m_Father: {fileID: 1904972835}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1086465568
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Particles/Multiply
+  m_Shader: {fileID: 205, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: eaae16fedda51e14296dcf680fe86c1d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    m_Colors: []
 --- !u!21 &1093488269
 Material:
   serializedVersion: 6
@@ -6257,7 +6297,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &1163391132
 Material:
@@ -6565,6 +6605,32 @@ MonoBehaviour:
   textureSize: 256
   material: {fileID: 2030454132}
   bufferCamera: {fileID: 1246635615}
+--- !u!21 &1258569099
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Particles/Additive
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    m_Colors:
+    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1 &1287227462
 GameObject:
   m_ObjectHideFlags: 0
@@ -11887,48 +11953,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &1342393119
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4632188501022576, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -6.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 4632188501022576, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 7.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 4632188501022576, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4632188501022576, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4632188501022576, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4632188501022576, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4632188501022576, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4632188501022576, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 40113a06a65cba8408c62843c9c99ec3, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!84 &1351149133
 RenderTexture:
   m_ObjectHideFlags: 0
@@ -11960,6 +11984,32 @@ RenderTexture:
     m_WrapW: 1
   m_Dimension: 2
   m_VolumeDepth: 1
+--- !u!21 &1388972842
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SmartLighting2D/SpriteWhite
+  m_Shader: {fileID: 4800000, guid: 43f7384bb9796b248b6e1ea0449fec2a, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1397640271
 GameObject:
   m_ObjectHideFlags: 0
@@ -12391,6 +12441,130 @@ Material:
     - _InvFade: 1
     m_Colors:
     - _TintColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1550647961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1550647964}
+  - component: {fileID: 1550647963}
+  m_Layer: 0
+  m_Name: WorldSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1550647963
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550647961}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: bf771f70b46043e40bcdc4b62c762d2e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.019
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 15.099491
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1550647964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550647961}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.3100958, y: -0.56202847, z: -7.96875}
+  m_LocalScale: {x: 0.09122834, y: 0.49636558, z: 1.4596301}
+  m_Children: []
+  m_Father: {fileID: 1904972835}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1550961073
 GameObject:
   m_ObjectHideFlags: 0
@@ -12442,31 +12616,6 @@ MonoBehaviour:
   lightSprite: 1
   sprite: {fileID: 21300000, guid: d39788941ffdd2c47bcbe8a797c8cdaf, type: 3}
   update: 1
---- !u!21 &1570527519
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Particles/Multiply
-  m_Shader: {fileID: 205, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4f895cbbdf3ea774faffecb1957b91f9, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _InvFade: 1
-    m_Colors: []
 --- !u!1 &1605284420
 GameObject:
   m_ObjectHideFlags: 0
@@ -12584,7 +12733,7 @@ Transform:
   m_LocalScale: {x: 1.2432815, y: 1.4456155, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!84 &1608422220
 RenderTexture:
@@ -12984,31 +13133,6 @@ MonoBehaviour:
   textureSize: 1024
   material: {fileID: 1441390031}
   bufferCamera: {fileID: 1672294881}
---- !u!21 &1678600609
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Particles/Multiply
-  m_Shader: {fileID: 205, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 98540449}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _InvFade: 1
-    m_Colors: []
 --- !u!21 &1683275762
 Material:
   serializedVersion: 6
@@ -13421,32 +13545,6 @@ MonoBehaviour:
   textureSize: 1024
   material: {fileID: 1107866243}
   bufferCamera: {fileID: 1819199558}
---- !u!21 &1830866003
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SmartLighting2D/SpriteWhite
-  m_Shader: {fileID: 4800000, guid: 43f7384bb9796b248b6e1ea0449fec2a, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1847295570
 GameObject:
   m_ObjectHideFlags: 0
@@ -13748,9 +13846,9 @@ Transform:
   - {fileID: 617786438}
   - {fileID: 1935432747}
   - {fileID: 1076620406}
-  - {fileID: 621624177}
+  - {fileID: 1550647964}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1927281264
 GameObject:
@@ -13806,7 +13904,7 @@ Camera:
   far clip plane: 0.5
   field of view: 60
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 12
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -13838,6 +13936,37 @@ MonoBehaviour:
   textureSize: 2048
   material: {fileID: 860410839}
   bufferCamera: {fileID: 1927281266}
+--- !u!1 &1928285870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1928285871}
+  m_Layer: 0
+  m_Name: QuizMechanics
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1928285871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1928285870}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.49, y: -3.8, z: 0.05859375}
+  m_LocalScale: {x: 1.47398, y: 1.319636, z: 1}
+  m_Children:
+  - {fileID: 1990137921}
+  - {fileID: 1052515300}
+  - {fileID: 621624177}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1935432746
 Prefab:
   m_ObjectHideFlags: 0
@@ -13847,11 +13976,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4840159067449394, guid: d61eb677d0a8c6b44b8fe559ed70fd8b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.73
+      value: 1.48
       objectReference: {fileID: 0}
     - target: {fileID: 4840159067449394, guid: d61eb677d0a8c6b44b8fe559ed70fd8b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -7.3
+      value: -6.51
       objectReference: {fileID: 0}
     - target: {fileID: 4840159067449394, guid: d61eb677d0a8c6b44b8fe559ed70fd8b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13962,7 +14091,7 @@ Transform:
   m_LocalScale: {x: 1.3147354, y: 1.3147354, z: 1.3147354}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1957009946
 GameObject:
@@ -14332,20 +14461,20 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1990137917}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.05859375}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1692080572}
   - {fileID: 619449272}
   - {fileID: 966584862}
   - {fileID: 362153416}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1928285871}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1.9945997, y: 5.0923133}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!84 &2007958132
@@ -14410,31 +14539,6 @@ RenderTexture:
     m_WrapW: 1
   m_Dimension: 2
   m_VolumeDepth: 1
---- !u!21 &2024259463
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Particles/Multiply
-  m_Shader: {fileID: 205, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6745d40e3d8e2024db77634045d4331e, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _InvFade: 1
-    m_Colors: []
 --- !u!21 &2030454132
 Material:
   serializedVersion: 6
@@ -14562,78 +14666,6 @@ Material:
     - _InvFade: 1
     m_Colors:
     - _TintColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &2080214486
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2080214488}
-  - component: {fileID: 2080214487}
-  m_Layer: 0
-  m_Name: DataController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2080214487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2080214486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52615396be75a3d4b9d4dd650270d072, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allRoundData:
-  - name: Round Zero
-    timeLimitInSeconds: 30
-    pointsAddedForCorrectAnswer: 1
-    questions:
-    - questionText: Hoe word een optische prisma ook wel genoemd?
-      answers:
-      - answerText: Vierkante prisma
-        isCorrect: 0
-      - answerText: Driehoekige prisma
-        isCorrect: 1
-      - answerText: Ronde Prisma
-        isCorrect: 0
-    - questionText: Wat gebeurt er als je met licht door een glazen prisma schijnt?
-      answers:
-      - answerText: Splitst wit licht in verschillende kleuren
-        isCorrect: 1
-      - answerText: Laat wit licht zien
-        isCorrect: 0
-      - answerText: Laat blauw licht zien
-        isCorrect: 0
-  - name: Round One
-    timeLimitInSeconds: 30
-    pointsAddedForCorrectAnswer: 1
-    questions:
-    - questionText: Zitten kleuren in het licht of in voorwerpen? (Denk aan de prisma
-        met de lens)
-      answers:
-      - answerText: In het licht zelf
-        isCorrect: 1
-      - answerText: In voorwerpen
-        isCorrect: 0
---- !u!4 &2080214488
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2080214486}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.97, y: 10.52, z: 0}
-  m_LocalScale: {x: 0.32272127, y: 0.26893437, z: 0.77279997}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!84 &2086113159
 RenderTexture:
   m_ObjectHideFlags: 0

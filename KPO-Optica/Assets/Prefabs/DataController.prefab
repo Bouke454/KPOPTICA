@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1252872614060580}
+  m_IsPrefabAsset: 1
+--- !u!1 &1252872614060580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4599965445809778}
+  - component: {fileID: 114935009044307482}
+  m_Layer: 0
+  m_Name: DataController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4599965445809778
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1252872614060580}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -25.97, y: 10.52, z: 0}
+  m_LocalScale: {x: 0.32272127, y: 0.26893437, z: 0.77279997}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114935009044307482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1252872614060580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52615396be75a3d4b9d4dd650270d072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allRoundData:
+  - name: Round Zero
+    timeLimitInSeconds: 30
+    pointsAddedForCorrectAnswer: 1
+    questions:
+    - questionText: Hoe word een optische prisma ook wel genoemd?
+      answers:
+      - answerText: Vierkante prisma
+        isCorrect: 0
+      - answerText: Driehoekige prisma
+        isCorrect: 1
+      - answerText: Ronde Prisma
+        isCorrect: 0
+    - questionText: Wat gebeurt er als je met licht door een glazen prisma schijnt?
+      answers:
+      - answerText: Splitst wit licht in verschillende kleuren
+        isCorrect: 1
+      - answerText: Laat wit licht zien
+        isCorrect: 0
+      - answerText: Laat blauw licht zien
+        isCorrect: 0
+  - name: Round One
+    timeLimitInSeconds: 30
+    pointsAddedForCorrectAnswer: 1
+    questions:
+    - questionText: Zitten kleuren in het licht of in voorwerpen? (Denk aan de prisma
+        met de lens)
+      answers:
+      - answerText: In het licht zelf
+        isCorrect: 1
+      - answerText: In voorwerpen
+        isCorrect: 0
+  - name: Round One
+    timeLimitInSeconds: 30
+    pointsAddedForCorrectAnswer: 1
+    questions:
+    - questionText: Waar staat UV voor?
+      answers:
+      - answerText: Ultraviolet
+        isCorrect: 1
+      - answerText: Ultravisie
+        isCorrect: 0
+    - questionText: Is het waar dat je met behulp van UV licht elektromagnetischDe
+        UV-lamp toont elektromagnetische straling aan wat net buiten het deel van
+        het spectrum van het menselijk oog waarneembaar is
+      answers:
+      - answerText: Juist
+        isCorrect: 1
+      - answerText: Onjuist
+        isCorrect: 0

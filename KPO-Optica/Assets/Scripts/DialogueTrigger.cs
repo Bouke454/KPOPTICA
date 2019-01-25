@@ -21,7 +21,17 @@ public class DialogueTrigger : MonoBehaviour
             check = true;
 
         }
-	}
+
+        if (other.CompareTag("uvFlashlight") && tag == "Solid" && check == false)
+		{
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            check = true;
+
+        }
+
+    }
+
+
 
 
 	public void TriggerDialogue()

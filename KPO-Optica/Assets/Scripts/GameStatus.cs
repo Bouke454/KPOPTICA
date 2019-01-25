@@ -15,7 +15,11 @@ public class GameStatus : MonoBehaviour {
     public void GrantLevelAcces(string sceneName) {
         int SceneNumber;
         Int32.TryParse(sceneName, out SceneNumber);
-        if (LevelCounter >= SceneNumber) {
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "Intro") {
+            TravelPermission = false;
+        }
+        else if (LevelCounter >= SceneNumber) {
             TravelPermission = true;
         }
     }

@@ -12,6 +12,7 @@ TagManager:
   - UIOption
   - Event
   - Torch
+  - uvFlashlight
   layers:
   - Default
   - TransparentFX
